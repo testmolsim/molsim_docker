@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get install -y git gfortran fftw3-dev locate make
 RUN updatedb
 
-CMD cd molsim/ && ./pull_tools/run_tests.sh
+CMD chmod +x ./pull_tools/run_tests.sh && cd molsim/ && ./pull_tools/run_tests.sh
