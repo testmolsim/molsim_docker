@@ -1,6 +1,5 @@
-LABEL maintainer="pascal.hebbeker@gmail.com"
-
 FROM ubuntu:18.04
+LABEL maintainer="pascal.hebbeker@gmail.com"
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git gfortran fftw3-dev locate make
